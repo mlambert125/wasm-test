@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Host App</title>
+        <script type="module">
+            import init, { make_person } from './pkg/wasm_test.js';
+
+            async function run() {
+                await init();
+                const person = make_person("Alice", 30);
+                document.getElementById("output").innerText = `Name: ${person.name}, Age: ${person.age}`;
+            }
+            run();
+
+        </script>
+    </head>
+    <body>
+        <h1>Host Application</h1>
+        <p id="output"></p>
+    </body>
+</html>
