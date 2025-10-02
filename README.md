@@ -1,5 +1,11 @@
 # Rust WebAssembly
 
+## Source Code
+
+On github:
+
+https://github.com/mlambert125/wasm-test
+
 ## What we are covering
 
 - What is WebAssembly?
@@ -97,7 +103,8 @@ compile to WASM, but the most popular and best-supported is Rust.
 #### wasm-bindgen library/cli
 
 - A Rust library and CLI tool that makes it easier to work with WebAssembly
-- Automatically generates the glue code needed to call JS from Rust and Rust from JS
+- Automatically generates the glue code needed to call JS from Rust and Rust
+  from JS
 - Handles passing strings, objects, and closures between Rust and JS for us
 
 #### web-sys library
@@ -115,7 +122,8 @@ compile to WASM, but the most popular and best-supported is Rust.
   the necessary JS glue code using wasm-bindgen.
 - Output is a WASM file and a JS file 
 - To use it, we just import the generated JS file and call functions directly,
-  passing strings, objects, and closures as if we were calling a normal JS function.
+  passing strings, objects, and closures as if we were calling a normal JS
+  function.
 
 ### Setting Up
 
