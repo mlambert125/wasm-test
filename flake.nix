@@ -27,6 +27,7 @@
           nixd
           alejandra
           wasm-pack
+          wabt
         ];
       };
     });
