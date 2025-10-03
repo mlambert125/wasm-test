@@ -49,8 +49,7 @@
       (local.get $name_len)) ;; length
 
     ;; Return the pointer to the greeting
-    (local.get $greeting_ptr)   
-  )
+    (local.get $greeting_ptr))
 
   ;; Export the functions (NOTE: memory is also exported above)
   (export "greet" (func $greet))
