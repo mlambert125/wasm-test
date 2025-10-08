@@ -1,1 +1,3 @@
-/target
+rust-wasm/target
+wat-wasm/*.wasm
+

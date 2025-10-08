@@ -26,3 +26,4 @@ const greetStr = new TextDecoder('utf-8').decode(greetBytes);
 
 // Display the greeting message
 document.getElementById("output").textContent = `OUTPUT: ${greetStr}`;
+

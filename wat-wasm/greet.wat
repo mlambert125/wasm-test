@@ -1,5 +1,7 @@
 (module
   ;; Define our one and only memory with an initial size of 1 page (64KiB)
+  ;; Export this here as well so that host can read/write to it for passing strings
+  ;; back and forth
   (memory (export "memory") 1)
 
   ;; Say "Hello, $name" where $name is at memory address $addr
@@ -30,8 +32,7 @@
     (memory.copy
       (i32.const 11) ;; destination
       (i32.const 504) ;; source
-      (local.get $name_len)) ;; length
-  )
+      (local.get $name_len))) ;; length
 
   ;; Export the functions (NOTE: memory is also exported above)
   (export "greet" (func $greet)))
